@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import Head from "next/head"; // Importing the Head component from next/head
 
 interface HeadProps {
   title: string;
@@ -8,12 +9,12 @@ interface HeadProps {
 
 const Heading: FC<HeadProps> = ({ title, description, keywords }) => {
   return (
-    <>
+    <Head>
       <title>{title}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-    </>
+    </Head>
   );
 };
 

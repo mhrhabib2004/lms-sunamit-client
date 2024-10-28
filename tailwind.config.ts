@@ -1,12 +1,12 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}', // Corrected the missing quote
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode:["class"],
+  darkMode: ["class"],
   theme: {
     extend: {
       fontFamily: {
@@ -29,6 +29,6 @@ const config: Config = {
     },
   },
   plugins: [],
-}
+};
 
-export default config
+export default config;
