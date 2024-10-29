@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 import React, { FC } from "react";
 import Heading from "./utils/Heading";
 

@@ -1,3 +1,5 @@
+// 'use client';
+
 import React, { FC } from "react";
 import Head from "next/head"; // Importing the Head component from next/head
 
