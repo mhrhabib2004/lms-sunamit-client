@@ -1,8 +1,8 @@
 import { Poppins } from 'next/font/google';
 import { Josefin_Sans } from 'next/font/google';
-import { ThemeProvider } from "./utils/theme.provider";
 import "./globals.css";
 import { Metadata } from 'next';
+import { ThemeProvider } from '@/utils/theme.provider';
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -28,14 +28,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${poppins.variable} $ {josefin.variable} !bg-white dark:bg-gradient-to-b  dark:from-gray-900 dark:to-black duration-300  antialiased`} 
-      >
-        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-        {children}
-        </ThemeProvider>
-      </body>
-    </html>
+    <html suppressHydrationWarning lang="en">
+    <body
+      className={`${poppins.variable} ${josefin.variable} !bg-white dark:bg-gradient-to-b  dark:from-gray-900 dark:to-black duration-300  antialiased`} 
+    >
+      <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+      {children}
+      </ThemeProvider>
+    </body>
+  </html>
   );
 }
+// system
