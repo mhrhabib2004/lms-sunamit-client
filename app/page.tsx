@@ -1,5 +1,5 @@
-// 'use client';
-import React, { FC, useActionState, useState } from "react";
+'use client';
+import React, { FC,  useState } from "react";
 import Heading from "../utils/Heading";
 import Header from "./components/Header"
 
@@ -20,6 +20,7 @@ const Page: FC<Props> = () => {
       open={open}
       setOpen={setOpen}
       activeItem={activeItem}
+      
       />
     </div>
   );
