@@ -26,7 +26,7 @@ const NavItems = () => {
             Landwind
           </span>
         </a>
-
+ 
         <div className="flex items-center lg:order-2">
           <div className="hidden mt-2 mr-4 sm:inline-block">
             <span></span>
