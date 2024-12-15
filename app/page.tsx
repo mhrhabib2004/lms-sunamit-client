@@ -1,15 +1,15 @@
 'use client';
-import React, { FC,  useState } from "react";
+import React, { FC} from "react";
 import Heading from "../utils/Heading";
 import Header from "./components/Header"
-import NavItems from "@/utils/NavItems";
 
-interface Props {}
 
-const Page: FC<Props> = () => {
+// interface Props {}
+
+const Page: FC = () => {
   
-  const [open,setOpen]=useState(false);
-  const [activeItem,setActiveItem]=useState(0);
+  // const [open,setOpen]=useState(false);
+  // const [activeItem,setActiveItem]=useState(0);
   return (
     <div>
       <Heading
@@ -17,9 +17,7 @@ const Page: FC<Props> = () => {
         description="ELearning is a platform for students to learn and get help from teachers"
         keywords="Programming, MERN, Redux, digital marketing, CPA marketing"
       />
-      <Header
-      
-      />
+      <Header />
       {/* <NavItems></NavItems> */}
     </div>
   );
