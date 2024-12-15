@@ -2,6 +2,7 @@
 import React, { FC,  useState } from "react";
 import Heading from "../utils/Heading";
 import Header from "./components/Header"
+import NavItems from "@/utils/NavItems";
 
 interface Props {}
 
@@ -16,12 +17,10 @@ const Page: FC<Props> = () => {
         description="ELearning is a platform for students to learn and get help from teachers"
         keywords="Programming, MERN, Redux, digital marketing, CPA marketing"
       />
-      <Header 
-      open={open}
-      setOpen={setOpen}
-      activeItem={activeItem}
+      <Header
       
       />
+      {/* <NavItems></NavItems> */}
     </div>
   );
 };
