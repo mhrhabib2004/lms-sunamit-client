@@ -1,18 +1,13 @@
 "use client";
 
 import React, { FC, useState, useEffect } from "react";
-import NavItems from "./NavItems";
-
-// type Props = {};
+import NavItems from "../../utils/NavItems";
 
 const Header: FC = () => {
-  // State to manage if the header is active (scrolled)
   const [active, setActive] = useState(false);
 
-  // Effect hook to handle scroll event
   useEffect(() => {
     const handleScroll = () => {
-      // Set active state based on scroll position
       if (window.scrollY > 85) {
         setActive(true);
       } else {
@@ -20,10 +15,8 @@ const Header: FC = () => {
       }
     };
 
-    // Attach the scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -37,7 +30,7 @@ const Header: FC = () => {
           : "w-full border-b dark:border-[#ffffff1c] h-[80px] z-[80] dark:shadow"
       }`}
     >
-      <div className=" py-2 h-full">
+      <div className="py-2 h-full">
         <div>
           <NavItems />
         </div>
